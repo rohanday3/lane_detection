@@ -36,8 +36,6 @@ class VideoStream:
         elif const.MODE == "video":
             self.vs = cv2.VideoCapture(const.VIDEO_FILE)
             self.retrieved, self.frame = self.vs.read()
-        elif const.MODE == "simulink":
-            pass
         else:
             assert 0, "No video mode defined"
 
